@@ -1,6 +1,4 @@
 parameters:
-  containerGroups_aci_minecraft_container_workspaceKey:
-    type: SecureString
   containerGroups_aci_minecraft_container_name:
     defaultValue: aci-minecraft-container
     type: String
@@ -45,4 +43,3 @@ resources:
       logAnalytics:
         workspaceId: 83b699c5-b208-462a-982f-4526af8fb992
         logType: ContainerInstanceLogs
-        workspaceKey: "[parameters('containerGroups_aci_minecraft_container_workspaceKey')]"
